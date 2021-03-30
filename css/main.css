@@ -1,8 +1,7 @@
 html {
   box-sizing: border-box;
-  line-height: 1.5rem;
-  font-weight: normal;
-  background-color: #f5f2f0;
+  line-height: 1.5;
+  font-family: Georgia, serif;
 }
 
 *, *::before, *::after {
@@ -11,24 +10,29 @@ html {
 
 img {
   width: 100%;
-}
-
-body {
-  margin: 0;
+  height: 16rem;
+  padding: 0 1rem;
+  margin-bottom: .15rem;
 }
 
 h1, h2 {
-  font-family: 'Denk One', sans-serif;
+  font-family: "Denk One", sans-serif;
   color: #623b0c;
+  padding: 0 1rem;
 }
 
 h1 {
-  margin: 1.5rem;
-  padding: 1rem;
+  margin: 1rem 0;
 }
 
 h2 {
-  padding: 1rem -1rem;
+  margin: 1rem 0 1.5rem;
+  padding-bottom: 0;
+}
+
+body {
+  background-color: #f5f2f0;
+  margin: 0;
 }
 
 ol {
@@ -37,16 +41,22 @@ ol {
   grid-template-areas:
     "banner banner"
     "col1 col2"
-    "col3 col4";
+    "col1 col2";
   gap: 1rem;
+  padding: 1rem;
+  margin-top: -.5rem;
 }
 
-ol li {
-  list-style-type: none;
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border: 2px #623b0c solid;
   border-radius: 8px;
-  padding: 1rem;
   background-color: #ede3db;
+  list-style-type: none;
+  margin-bottom: 0;
 }
 
 a {
@@ -54,9 +64,11 @@ a {
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
-  padding: 1rem;
+  padding: .5em 1rem .6em;
+  margin: 1rem;
 }
 
 p {
-  font-family: 'Georgia', serif;
+  padding: .5rem 1rem 0;
+  margin-bottom: .5rem;
 }
