@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   line-height: 1.5rem;
   font-weight: normal;
+  background-color: #f5f2f0;
 }
 
 *, *::before, *::after {
@@ -16,11 +17,46 @@ body {
   margin: 0;
 }
 
-main {
+h1, h2 {
+  font-family: 'Denk One', sans-serif;
+  color: #623b0c;
+}
+
+h1 {
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+h2 {
+  padding: 1rem -1rem;
+}
+
+ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+    "banner banner"
     "col1 col2"
     "col3 col4";
   gap: 1rem;
+}
+
+ol li {
+  list-style-type: none;
+  border: 2px #623b0c solid;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ede3db;
+}
+
+a {
+  background-color: #623b0c;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Georgia', serif;
 }
